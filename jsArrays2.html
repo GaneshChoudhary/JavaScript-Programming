@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Arrays</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        // Splice Concept
+
+        // Affects Original Array ( Original Array Changes ) 
+        let arr = [10, 20, 30, 40, 50]
+        spliced_arr = arr.splice(2, 2)
+        console.log("Spliced Array: " + spliced_arr)
+        console.log("Affected Array: " + arr)
+
+
+        // Slice Concept
+
+        // Doesn't Affects Original Array ( Original Array Remains Same )
+        let arr1 = [10, 20, 30, 40, 50, 60]
+        sliced_arr = arr1.slice(1, 3)
+        console.log("Sliced Array: " + sliced_arr)
+        console.log("Array: " + arr1)
+
+
+        // IndexOf Concept
+
+        // Used to Find the Index of Element Occurance for First Time from Starting of Array
+        let arr2 = [10, 20, 30, 20, 40, 20, 50]
+        indexOfElement = arr2.indexOf(20)
+        console.log("(indexOf) Array Element: " + indexOfElement)
+        console.log("Array: " + arr2)
+
+
+        // LastIndexOf Concept
+
+        // Used to Find the Index of Element Occurance for First Time from Ending of Array
+        let arr3 = [10, 20, 30, 20, 40, 20, 50]
+        lastIndexOfElement = arr2.lastIndexOf(20)
+        console.log("(lastIndexOf) Array Element: " + lastIndexOfElement)
+        console.log("Array: " + arr3)
+
+
+        // Includes Concept
+
+        // Used to check whether the Element is present in the Array or not and returns output in Boolean Vlaue
+        let arr4 = [10, 20, 30, 40, 50, 60, 70]
+        arr_includes = arr4.includes(70)
+        console.log("Element Exist? ( Value : 70 ): " + arr_includes)
+        console.log("Array: " + arr4)
+
+
+        // Find Concept
+
+        // Used to Find the First Matching Element
+        let arr5 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+        arr_find = arr5.find(n => n >= 65)
+        console.log("Found Element: " + arr_find)
+        console.log("Array: " + arr5)
+
+
+        // FindIndex Concept
+
+        // Used to Find the First Matching Element's Index
+        let arr6 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+        arr_findIndex = arr5.findIndex(n => n >= 65)
+        console.log("Found Element's Index: " + arr_findIndex)
+        console.log("Array: " + arr6)
+
+
+        // Map Concept
+
+        // Creates New Array by Transforming each Element
+        let arr7 = [10,20,30,40,50]
+        arr_map = arr7.map(n=>n*10)
+        console.log("Mapped Array: " + arr_map)
+        console.log("Array: " + arr7)
+
+
+        // Filter Concept
+
+        // Creates New Array containing Elements that satisfies a Condition
+        let arr8 = [10,20,30,40,50]
+        arr_filter = arr8.filter(n=>n>10)
+        console.log("Filtered Array: " + arr_filter)
+        console.log("Array: " + arr8)
+        
+        
+        // Sort Concept
+
+        // Sorts Elements by default
+        // Affects Original Array
+        let fruits = ["Apple","Mango", "Banana", "Watermelon", "Chickoo"]
+        let sort_fruits = fruits.sort()
+        console.log("Sorted Fruits Array: " + sort_fruits)
+        console.log("Fruits Array: " + fruits)
+
+
+        // Reverse Concept
+
+        // Returns Reversed Order of an Array
+        // Affects Original Array
+        let num = [10,40,70,20,90,30,60,50,80]
+        num_reversed = num.reverse()
+        console.log("Reversed Array: " + num_reversed)
+        console.log("Array: " + num)
+    </script>
+</body>
+
+</html>
