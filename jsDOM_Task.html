@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Profile</title>
+</head>
+
+<body>
+    <label>First Name : </label>
+    <input type="text" id="show">
+    <button onclick="display()">Submit</button>
+    <h2 id="h2"></h2>
+
+    <label>Last Name : </label>
+    <input type="text" id="show1">
+    <button onclick="display1()">Submit</button>
+    <h2 id="h21"></h2>
+
+    <label>Education : </label>
+    <input type="text" id="show2">
+    <button onclick="display2()">Submit</button>
+    <h2 id="h22"></h2>
+
+    <label>Institute/University : </label>
+    <input type="text" id="show3">
+    <button onclick="display3()">Submit</button>
+    <h2 id="h23"></h2>
+
+    <label>Address : </label>
+    <input type="text" id="show4">
+    <button onclick="display4()">Submit</button>
+    <h2 id="h24"></h2>
+
+    <label>Course : </label>
+    <input type="text" id="show5">
+    <button onclick="display5()">Submit</button>
+    <h2 id="h25"></h2>
+
+
+    <script>
+        function display() {
+            let a = document.getElementById("show").value
+            document.getElementById("h2").innerHTML = a
+            
+        }
+
+        function display1() {
+            let a = document.getElementById("show1").value
+            document.getElementById("h21").innerHTML = a
+            
+        }
+
+        function display2() {
+            let a = document.getElementById("show2").value
+            document.getElementById("h22").innerHTML = a
+            
+        }
+
+        function display3() {
+            let a = document.getElementById("show3").value
+            document.getElementById("h23").innerHTML = a
+            
+        }
+
+        function display4() {
+            let a = document.getElementById("show4").value
+            document.getElementById("h24").innerHTML = a
+            
+        }
+
+        function display5() {
+            let a = document.getElementById("show5").value
+            document.getElementById("h25").innerHTML = a
+            
+        }
+    </script>
+</body>
+
+</html>
