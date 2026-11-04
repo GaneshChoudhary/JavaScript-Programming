@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game using JavaScript DOM</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: lightyellow;
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: purple;
+            padding: 5px;
+        }
+
+        .card {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        input {
+            appearance: none;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Quiz Game ( Test Your Knowledge!😉 )</h1>
+
+
+    <div class="card">
+
+
+
+
+
+        <label><strong>Question 1</strong> : What does HTML stand for?</label>
+
+
+        <br>
+
+
+
+        <input type="radio" name="option" value="wrong" id="option">Home Text Markup Language
+        <br>
+        <input type="radio" name="option" value="wrong" id="option">High Text Machine Language
+        <br>
+        <input type="radio" name="option" value="right" id="option">Hyper Text Markup Language
+        <br>
+        <input type="radio" name="option" value="wrong" id="option">Hyper Tool Multi Language
+        <br>
+
+
+        <button onclick="checkAnswer()">Check Answer</button>
+
+
+        <br>
+
+
+        <label id="output">Output : </label>
+
+
+    </div>
+
+
+    <script>
+        function checkAnswer() {
+            let a = document.getElementsByTagName("input")
+            if (a[2].checked) {
+                document.getElementById("output").textContent = "Output : Correct Answer 😁 (Hurray!)"
+            }else{
+                document.getElementById("output").textContent = "Output : Wrong Answer Selected 🥲(Try Another Option)"
+            }
+        }
+    </script>
+</body>
+
+</html>
