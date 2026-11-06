@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript(SetInterval) - Alert Message</title>
+    <style>
+        * {
+            margin: 2px;
+        }
+
+        #box-1 {
+            padding: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        #message-1 {
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 5px;
+            color: red;
+            background-color: lightcoral;
+        }
+
+        #box-2 {
+
+            padding: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        #message-2 {
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 5px;
+            color: green;
+            background-color: lightgreen;
+        }
+
+        #box-3 {
+            background-color: lightblue;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #box-4 {
+            background-color: lightblue;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            border: 1.5px solid black;
+            border-radius: 10px;
+            font-size: larger;
+            font-weight: bold;
+            padding: 10px;
+            color: red;
+        }
+
+        #square{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-1">
+        <label id="message-1">Alert!!!</label>
+    </div>
+
+    <div id="box-2">
+        <label id="message-2">Welcome To Technobrilliant Learning and Solutions!</label>
+    </div>
+
+    <div id="box-3">
+        <label id="message-3">Build Carrer in - FullStack Developer / Data Analyst / DevOps / Cloud Computing /
+            Cybersecurity</label>
+    </div>
+
+    <div id="box-4">
+        <label id="message-4">Programming Languages - Python , Java , Web Development , SQL and more...</label>
+    </div>
+
+    <button onclick="stop()">STOP</button>
+
+
+    <div id="square"></div>
+    <button onclick="stop2()">STOP</button>
+
+
+
+
+    <script>
+        var a = 0
+        let name = setInterval(function () {
+            a = a + 10
+            let msg_1 = document.getElementById("message-1")
+            msg_1.style.marginLeft = a + "px"
+
+            let msg_2 = document.getElementById("message-2")
+            msg_2.style.marginLeft = a + "px"
+
+            let msg_3 = document.getElementById("message-3")
+            msg_3.style.marginLeft = a + "px"
+
+            let msg_4 = document.getElementById("message-4")
+            msg_4.style.marginLeft = a + "px"
+        }, 1000)
+
+        function stop() {
+            clearInterval(name)
+        }
+
+        let name1 = setTimeout(function(){
+                let shape = document.getElementById("square")
+                shape.style.borderRadius = "100%"
+            },3000)
+
+        function stop2(){
+            clearTimeout(name1)
+        }
+    </script>
+</body>
+
+</html>
